@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/login_tv_title"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="32dp"
+        android:scaleType="fitCenter"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/login_edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Username"
+        android:textColor="@color/color1"
+        app:layout_constraintTop_toBottomOf="@id/login_tv_title">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_500"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/color1"
+        app:layout_constraintTop_toBottomOf="@id/login_edt_username">
+
+    </EditText>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn_login"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/login_edt_pass"
+        android:layout_marginHorizontal="12dp"
+        android:text="Login"
+        android:textColor="@color/color1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="12dp"
+        android:id="@+id/login_btn_backto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="Login as Customer"
+        android:textAllCaps="false"
+        android:textColor="@color/color1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
